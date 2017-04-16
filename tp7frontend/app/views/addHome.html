@@ -1,0 +1,25 @@
+<div class="row">
+	<h4>Ajout des lieux d'habitation</h4>
+
+	<div ng-controller="AddHomesCtrl">
+
+	<form action="#!/list">
+		<div class="form-group">
+			<label>Addresse</label>
+			<input type="text" name="address" class="form-control" ng-model="address" placeholder="Addresse">
+		</div>
+		<div class="form-group">
+			<label>Ville</label>
+			<input type="text" name="town" class="form-control" ng-model="town">
+		</div>
+		<div class="form-group">
+			<label>Pièces</label>
+			<input type="number" name="rooms" class="form-control" ng-model="rooms">
+		</div>
+		<div class="form-group">
+			<label>Surface</label>
+			<input type="number" name="surface" class="form-control" ng-model="surface" placeholder="Surface">
+		</div>
+			<button ng-click=add(address,town,rooms,surface) type="submit" class="btn btn-primary">Ajouter</button>
+	</form>
+</div>

@@ -1,0 +1,19 @@
+<div class="row">
+  <h4>Liste des lieux d'habitation</h4>
+
+  <div class="table-responsive" ng-controller="ListHomesCtrl">
+  <table class="table">
+	<tr>
+    <th>Addresse</th>
+    <th>Ville</th>
+    <th>Pieces</th>
+    <th>Surface</th>
+  </tr>
+	<tr ng-repeat="home in homes">
+		<td>{{home.address}}</td>
+    <td>{{home.town}}</td>
+    <td>{{home.rooms}}</td>
+    <td>{{home.surface}}</td>
+	</tr>
+  </table>
+</div>
